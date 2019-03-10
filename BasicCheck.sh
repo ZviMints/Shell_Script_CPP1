@@ -28,7 +28,7 @@ output_to_screen $answer
 
 # This function is responsible for Thread debugger used by Helgrind
 threaddebugger() {
-valgrind --tool=helgrind ./$1 $2 >/dev/null 2>&1
+ valgrind --tool=helgrind  --error-exitcode=1./$1 $2 >/dev/null 2>&1
 if [ $? -eq 0 ] 
 	then
                 Answer[2]=PASS
