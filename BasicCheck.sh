@@ -90,6 +90,6 @@ find Makefile >/dev/null 2>&1
 			output_to_screen 7
 		fi
 	else
-		echo "Makefile Not Found"
+		
 		output_to_screen 7 
 	fi
