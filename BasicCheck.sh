@@ -66,6 +66,7 @@ fi
 	if [ $# -lt 2 ] # Less then 2
 	then
 		echo "There Less Then 2 Arguments"
+		output_to_screen 7 
 		exit 7
 	fi
 
